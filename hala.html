@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hala - Portfolio</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background-color: #1a1625;
+            color: #f3f0f7;
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        header {
+            background-color: #261f35;
+            padding: 30px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            margin-bottom: 25px;
+            border: 1px solid #3d3252;
+        }
+
+        .profile-pic {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #f472b6;
+        }
+
+        .header-info h1 {
+            font-size: 1.8rem;
+            color: #ffffff;
+            margin-bottom: 5px;
+        }
+
+        .header-info .title {
+            color: #f472b6;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.85rem;
+            color: #d8b4fe;
+        }
+
+        .contact-info span {
+            background-color: #1a1625;
+            padding: 5px 12px;
+            border-radius: 20px;
+            border: 1px solid #3d3252;
+        }
+
+        section {
+            background-color: #261f35;
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 20px;
+            border: 1px solid #3d3252;
+        }
+
+        h2 {
+            color: #f472b6;
+            font-size: 1.25rem;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #3d3252;
+            padding-bottom: 8px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            gap: 15px;
+        }
+
+        .card {
+            background-color: #1a1625;
+            padding: 18px;
+            border-radius: 12px;
+            border: 1px solid #3d3252;
+        }
+
+        .card h3 {
+            font-size: 1.05rem;
+            color: #f3f0f7;
+            margin-bottom: 8px;
+        }
+
+        .card p {
+            font-size: 0.9rem;
+            color: #c4b5fd;
+        }
+
+        .tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 6px;
+            margin-top: 12px;
+        }
+
+        .tag {
+            background-color: #261f35;
+            color: #f472b6;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            border: 1px solid #e879f9;
+        }
+
+        .reason {
+            margin-top: 10px;
+            font-size: 0.85rem;
+            color: #e9d5ff;
+            background-color: #2d223f;
+            padding: 10px;
+            border-radius: 8px;
+            border-left: 3px solid #f472b6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 15px;
+            color: #a78bfa;
+            font-size: 0.85rem;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            .contact-info {
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+
+        <header>
+            <img src="c:\Users\halai\Downloads\اhals.png" alt="Hala" class="profile-pic">
+            <div class="header-info">
+                <h1>Hala</h1>
+                <div class="title">Computer Science Student | 2st Year</div>
+                <div class="contact-info">
+                    <span>Age: 18</span>
+                    <span>Mansoura, Egypt</span>
+                    <span>hala@gmail.com</span>
+                    <span>+20 100 000 0000</span>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <h2>About Me</h2>
+            <p style="color: #c4b5fd; font-size: 0.95rem;">
+                First-year Computer Science student passionate about programming fundamentals, logical thinking, and problem-solving. Constantly seeking to expand my technical skills to build efficient software applications.
+            </p>
+        </section>
+
+        <section>
+            <h2>Skills & Technologies</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Programming & Logic</h3>
+                    <p>Writing clean code, using development environments, and applying object-oriented principles.</p>
+                    <div class="tags">
+                        <span class="tag">C++</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">OOP</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>Mathematics & Foundations</h3>
+                    <p>Studying core mathematical and logical concepts essential for computer science.</p>
+                    <div class="tags">
+                        <span class="tag">Discrete Math</span>
+                        <span class="tag">Logic Design</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Future Goals</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Data Structures & Algorithms</h3>
+                    <div class="reason">
+                        <strong>Why:</strong> To write time and space-efficient code and excel at competitive problem-solving.
+                    </div>
+                </div>
+                <div class="card">
+                    <h3>AI & Machine Learning</h3>
+                    <div class="reason">
+                        <strong>Why:</strong> To apply mathematical concepts in developing intelligent software solutions.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2>Hobbies & Interests</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Problem Solving</h3>
+                    <p>Tackling algorithmic puzzles and logical reasoning challenges.</p>
+                </div>
+                <div class="card">
+                    <h3>Tech Reading</h3>
+                    <p>Exploring tech blogs, documentation, and the latest computer science trends.</p>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>Hala Portfolio © 2026</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
